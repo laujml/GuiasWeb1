@@ -1,0 +1,167 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f8e1f4 0%, #e6d0f7 100%);
+    color: #5e3a75;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+#main-header {
+    text-align: center;
+    padding: 30px 0;
+    background: linear-gradient(to right, #d6b4f0, #f5b6d3);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 4rem;
+    color: #8a2be2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-style: italic;
+    color: #8a2be2;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.signature {
+    font-weight: bold;
+    color: #8a2be2;
+}
+
+/* Títulos */
+h2 {
+    color: #ba55d3;
+    border-bottom: 2px dashed #d9b3ff;
+    padding-bottom: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h3 {
+    color: #9370db;
+    margin: 15px 0;
+}
+
+/* Sección de introducción */
+#intro-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#intro-section p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.quote {
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0;
+    color: #8a2be2;
+    font-size: 1.2rem;
+    padding: 15px;
+    background-color: #f3e5f5;
+    border-radius: 10px;
+}
+
+/* Sección de personajes */
+#characters-section {
+    margin-bottom: 30px;
+}
+
+.character-card {
+    background: linear-gradient(135deg, #f3e5f5 0%, #e8d0f8 100%);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+}
+
+.character-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #d9b3ff;
+    margin: 0 auto 15px;
+}
+
+.character-card p {
+    text-align: justify;
+}
+
+/* Sección de temporadas */
+#seasons-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.season {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, #f3e5f5 0%, #e8d0f8 100%);
+    border-radius: 10px;
+}
+
+.season p {
+    text-align: justify;
+}
+
+/* Pie de página */
+#main-footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #d6b4f0, #f5b6d3);
+    border-radius: 15px;
+    margin-top: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries para responsive */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.5rem;
+    }
+    
+    .character-card {
+        padding: 15px;
+    }
+    
+    .character-img {
+        width: 120px;
+        height: 120px;
+    }
+}
