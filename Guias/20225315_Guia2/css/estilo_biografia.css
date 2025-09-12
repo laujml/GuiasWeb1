@@ -1,0 +1,127 @@
+/* ====== ESTILOS GENERALES ====== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* ====== HEADER ====== */
+header {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #f1c40f;
+}
+
+header .logo img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+/* Selector hijo directo */
+header > nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Selectores de atributos */
+nav a[href^="https"] {
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+/* Pseudo-clases */
+nav a:link {
+    color: #ecf0f1;
+}
+nav a:visited {
+    color: #bdc3c7;
+}
+nav a:hover {
+    background-color: #f1c40f;
+    color: #2c3e50;
+}
+nav a:active {
+    transform: scale(0.95);
+}
+
+/* ====== SECCIONES ====== */
+.seccion {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+/* Selector descendiente */
+.seccion article p {
+    margin-bottom: 15px;
+}
+
+/* Pseudo-elementos */
+.seccion article p::first-letter {
+    font-size: 1.5rem;
+    color: gold;
+    font-weight: bold;
+}
+
+.seccion article p:first-child::first-line {
+    text-decoration: underline;
+}
+
+/* Combinación de selectores */
+article img, article p {
+    margin-top: 10px;
+}
+
+/* Imágenes dentro de artículos */
+article img {
+    width: 100%;
+    max-width: 300px;   /* ✅ antes era 500px */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: block;
+    margin: 0 auto;     /* ✅ centra la imagen */
+}
+
+
+/* ====== FOOTER ====== */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 5px solid #f1c40f;
+}
+
+/* Pseudo-clases avanzadas */
+footer p:first-child {
+    font-weight: bold;
+}
+
+footer a:hover::after {
+    content: " 🔗";
+}
