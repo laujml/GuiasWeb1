@@ -1,0 +1,84 @@
+/* Estilos generales */
+body {
+    background-color: white;
+}
+
+div {
+    position: relative;
+}
+
+.ejemplo-container {
+    overflow: hidden;
+    margin-bottom: 50px; 
+}
+
+
+/* Estilos para el Resultado 1: Apilamiento en cascada con z-index */
+
+
+div {
+    position: relative;
+}
+
+#diez_de_diamantes {
+    left: 0px;
+    top: 0px;
+    z-index: 1; 
+}
+
+#sota_de_diamantes {
+    left: 10px;
+    top: -80px;
+    z-index: 2;
+}
+
+#reina_de_diamantes {
+    left: 20px;
+    top: -155px;
+    z-index: 3;
+}
+
+#rey_de_diamantes {
+    left: 30px;
+    top: -230px;
+    z-index: 4;
+}
+
+#as_de_diamantes {
+    left: 40px;
+    top: -310px;
+    z-index: 5;
+}
+
+/* Estilos para el Resultado 2: Apilamiento con z-index */
+
+#diez_de_diamantes2 {
+    left: 0px;
+    top: 0px;
+    z-index: 5; 
+}
+
+#sota_de_diamantes2 {
+    left: 10px;
+    top: -80px;
+    z-index: 4;
+}
+
+#reina_de_diamantes2 {
+    left: 20px;
+    top: -155px;
+    z-index: 3;
+}
+
+#rey_de_diamantes2 {
+    left: 30px;
+    top: -230px;
+    z-index: 2;
+}
+
+#as_de_diamantes2 {
+    left: 40px;
+    top: -310px;
+    z-index: 1; 
+}
+
