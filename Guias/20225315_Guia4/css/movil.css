@@ -1,0 +1,284 @@
+
+@media screen and (max-width: 480px) {
+    /* Elimina la ocultación de #imgDesc */
+    #imgDesc {
+        display: block !important;
+        width: 100%;
+        background-color: #464d52;
+        padding: 20px 0;
+    }
+
+    #imgDesc .contenido-interno {
+        width: 90%;
+        margin: 0 auto;
+        display: block !important; /* O flex si prefieres */
+        background-color: #999;
+        padding: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    #imgDesc .contenido-interno img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    #descripcion {
+        width: 100%;
+        color: white;
+        display: block;
+        text-align: center;
+    }
+
+    #descripcion p {
+        margin: 0;
+        font-weight: bold;
+        line-height: 1.5;
+        text-align: justify;
+        font-size: 0.9em;
+    }
+
+    /* SUPERIOR - FONDO OSCURO */
+    #superior {
+        width: 100%;
+        display: block;
+        clear: both;
+        background: #464d52;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* ENCABEZADO */
+    #encabezado {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: block;
+        background-color: #464d52;
+        box-sizing: border-box;
+        overflow: visible;
+        flex-direction: column;
+    }
+
+    /* LOGO */
+    #logo {
+        width: 70%;
+        max-width: 250px;
+        height: auto;
+        margin: 15px auto;
+        display: block;
+        font-size: 1em;
+    }
+
+    /* MENU - NAV */
+    nav {
+        width: 100%;
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+        border-top: none;
+        background-color: #464d52;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        border-top: solid 2px rgba(255, 255, 255, 0.3);
+        border-bottom: solid 2px rgba(255, 255, 255, 0.3);
+        display: block;
+        float: none;
+    }
+
+    nav ul li {
+        display: inline-block;
+        float: none;
+        margin: 0;
+        padding: 12px 10px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        padding: .3em .4em;
+        margin: 0;
+        display: inline-block;
+        color: white;
+        font-size: 0.85em;
+        transition: color 0.3s, transform 0.3s;
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+    nav ul li a:hover {
+        color: #AAA;
+        transform: scale(1.05);
+    }
+
+    nav ul li a#inicio {
+        background: url(../img/turismo/home.png) no-repeat left center;
+        background-size: 18px;
+        padding-left: 23px;
+    }
+
+    nav ul li a#planes {
+        background: url(../img/turismo/planes.png) no-repeat left center;
+        background-size: 18px;
+        padding-left: 23px;
+    }
+
+    nav ul li a#galeria {
+        background: url(../img/turismo/galeria.png) no-repeat left center;
+        background-size: 18px;
+        padding-left: 23px;
+    }
+
+    nav ul li a::before {
+        display: none !important;
+    }
+
+    /* DESCRIPCIÓN - DENTRO DEL ENCABEZADO OSCURO */
+    #descripcion {
+        width: 100%;
+        display: block;
+        padding: 25px 8%;
+        margin: 0;
+        background: #464d52;
+        float: none;
+        color: white;
+    }
+
+    #descripcion p {
+        color: #e2e8f0;
+        font-size: 0.95em;
+        line-height: 165%;
+        text-align: justify;
+        margin: 0;
+        font-weight: normal;
+        width: 100%;
+    }
+
+    /* ===== CONTENIDO PRINCIPAL ===== */
+    #contenido {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        margin: 0;
+        padding: 15px 0;
+        clear: both;
+        background: white;
+    }
+
+    /* PLANES/TARJETAS */
+    .plan {
+        width: 90%;
+        padding: 0;
+        margin: 20px auto;
+        background-color: white;
+        border: solid 2px #0066cc;
+        border-radius: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        float: none;
+    }
+
+    .plan h1 {
+        font-size: 1.3em;
+        text-align: center;
+        margin: 15px 0 10px 0;
+        color: #464d52;
+    }
+
+    .plan p {
+        font-size: 0.9em;
+        line-height: 1.6;
+        margin: 10px 15px;
+        text-align: justify;
+        color: #333;
+    }
+
+    .plan img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0;
+        border-radius: 0;
+        float: none;
+    }
+
+    /* BOTÓN */
+    .boton {
+        width: 100%;
+        margin: 15px 0;
+        text-align: center;
+        padding: 0 15px 15px 15px;
+        background-color: transparent;
+        border-radius: 0;
+        cursor: default;
+    }
+
+    .boton a {
+        display: inline-block;
+        width: 90%;
+        padding: 12px;
+        background: #0066cc;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        text-align: center;
+        transition: background 0.3s;
+    }
+
+    .boton a:hover {
+        background: #0052a3;
+    }
+
+    /* FOOTER */
+    footer {
+        width: 100%;
+        padding: 20px;
+        background: #464d52;
+        color: white;
+        text-align: center;
+        margin-top: 0;
+        clear: both;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 0.85em;
+        color: white;
+        line-height: 1.5;
+    }
+
+    /* PÁGINA DE PLANES */
+    .planes {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+        border-radius: 15px;
+        background: white;
+    }
+
+    .planes h1 {
+        font-size: 1.3em;
+        text-align: center;
+        color: #464d52;
+    }
+
+    .planes .precio {
+        font-size: 1em;
+    }
+}

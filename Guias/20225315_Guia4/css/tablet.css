@@ -1,0 +1,190 @@
+/* MENU */
+nav{
+    width: 100%; /* 960/960*=100%*/
+    font-size: 1.4em;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0px 0px 65px 0px;
+}
+
+nav ul li{
+    float: left;
+    margin: 0px;
+    padding: 10px 0px 0px 0px;
+    border-top: solid 2px white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: .3em .5em;
+    margin: 0em .5em;
+    display: block;
+    color: white;
+    transition: color 1s, transform 3s;
+}
+
+nav ul li a:hover{
+    color: #AAA;
+    transform:scale(1.5);
+}
+
+nav ul li a#inicio{
+    background: url(../img/turismo/home.png) no-repeat 0px 3px;
+    padding-left: 40px;
+}
+
+nav ul li a#planes{
+    background: url(../img/turismo/planes.png) no-repeat 0px 3px;
+    padding-left: 40px;
+}
+
+nav ul li a#galeria{
+    background: url(../img/turismo/galeria.png) no-repeat 0px 3px;
+    padding-left: 40px;
+}
+
+/* PARTE SUPERIOR */
+#encabezado{
+    margin: 0px auto;
+    width: 80%;
+}
+
+#superior #encabezado #logo{
+    margin: 2% 0px; /*23/960=2%*/
+    width: 21%; /*200/960= 21%*/
+    height: auto;
+}
+
+#imgDesc img{
+    width: 100%;
+    height: auto;
+    float: none;
+}
+
+/*Contenido principal de las paginas */
+#contenido{
+    width: 90%;
+    margin: 0px auto;
+    overflow: auto;
+}
+
+/* CONTENIDO DE LA PAGINA INDEX */
+.plan{
+    width: 94%; 
+    padding: 1.5%; 
+    margin: 20px 1.5%;
+    background-color:white;
+    border: solid 1px black;
+    border-radius: 10px;
+    float: left;
+    text-align: justify;
+}
+
+.plan img{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+/* CONTENIDO DE LA PAGINA PLANES */
+.planes{
+    width: 94%;
+    background: white;
+    padding: 1% 3%;
+}
+
+.planes img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.planes h1{
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.boton{
+    width: 40%;
+    float: right;
+}
+
+.planes .precio{
+    font-size: 1.1em;
+    margin: 20px 0px 5px;
+    padding-bottom: 15px;
+    border-bottom: solid 2px grey;
+    font-weight: bold;
+}
+
+/* CONTENIDO DE LA PAGINA GALERIA*/
+#galeria .plan{
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    margin: 30px 1%;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    width: 44%;
+    text-align: center;
+    font-style: italic;
+}
+
+#galeria .plan p{
+    clear:both;
+}
+
+#galeria .plan p{
+    width: 90%;
+    height: auto;
+    margin: 5px 5%;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #imgDesc {
+        width: 100%;
+        background-color: #464d52;
+        padding: 50px 0;
+    }
+
+    #imgDesc .contenido-interno {
+        width: 90%;
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex !important;
+        flex-direction: column !important; /* Apila imagen sobre texto */
+        flex-wrap: nowrap !important;
+        gap: 20px;
+        background-color: #999;
+        padding: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    #imgDesc .contenido-interno img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin: 0;
+    }
+
+    #descripcion {
+        width: 100%;
+        color: white;
+        display: block;
+        text-align: center;
+    }
+
+    #descripcion p {
+        margin: 0;
+        font-weight: bold;
+        line-height: 1.6;
+        text-align: justify;
+        font-size: 1.1em;
+    }
+}
