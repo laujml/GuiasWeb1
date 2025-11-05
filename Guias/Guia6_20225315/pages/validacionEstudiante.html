@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/stylesFunciones.css" rel="stylesheet" />
+    <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png" />
+    <title>Validación con RegEx</title>
+</head>
+
+<body>
+    <header>
+        <div class="px-3 py-2 text-bg-dark fixed-top">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="../indexFunciones.html"
+                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                        <img src="../img/js.png" alt="" width="32" height="32" class="me-2" />
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small nav-bar">
+                        <li class="text-center">
+                            <a href="recursividad.html" class="nav-link text-white">
+                                <i class="bi bi-arrow-clockwise bi-2 d-block"></i>
+                                Recursividad
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            <a href="tabla.html" class="nav-link text-white">
+                                <i class="bi bi-table bi-2 d-block"></i>
+                                Creando una Tabla
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            <a href="formulario.html" class="nav-link text-white">
+                                <i class="bi bi-ui-checks bi-2 d-block"></i>
+                                Formulario
+                            </a>
+                        </li>
+                         <li class="text-center">
+        <a href="validacionEstudiante.html" class="nav-link text-white">
+            <i class="bi bi-shield-check bi-2 d-block"></i>
+            Validación RegEx
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-12 shadow-lg p-3 mt-5 bg-body rounded">
+                <h3>Registro de Estudiante - Validación con RegEx</h3>
+                <form id="idFormEstudiante">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="idCarnet" placeholder="Carnet" />
+                                <label for="idCarnet">
+                                    <i class="bi bi-person-badge"></i> Carnet (Formato: AB001)
+                                </label>
+                                <div class="invalid-feedback">
+                                    Formato inválido. Use dos letras mayúsculas y tres números (Ej: AB001)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="idNombreCompleto" placeholder="Nombre completo" />
+                                <label for="idNombreCompleto">
+                                    <i class="bi bi-person"></i> Nombre completo
+                                </label>
+                                <div class="invalid-feedback">
+                                    El nombre solo debe contener letras y espacios
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="idDUI" placeholder="DUI" />
+                                <label for="idDUI">
+                                    <i class="bi bi-card-text"></i> DUI (Formato: ########-#)
+                                </label>
+                                <div class="invalid-feedback">
+                                    Formato inválido. Use 8 dígitos, guión y 1 dígito (Ej: 12345678-9)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="idNIT" placeholder="NIT" />
+                                <label for="idNIT">
+                                    <i class="bi bi-file-text"></i> NIT (Formato: ####-######-###-#)
+                                </label>
+                                <div class="invalid-feedback">
+                                    Formato inválido. Use ####-######-###-# (Ej: 1234-567890-123-4)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="idFechaNacimiento" placeholder="Fecha de nacimiento" />
+                                <label for="idFechaNacimiento">
+                                    <i class="bi bi-calendar"></i> Fecha (DD/MM/AAAA)
+                                </label>
+                                <div class="invalid-feedback">
+                                    Formato inválido. Use DD/MM/AAAA (Ej: 15/03/2000)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="idCorreo" placeholder="Correo electrónico" />
+                                <label for="idCorreo">
+                                    <i class="bi bi-envelope"></i> Correo electrónico
+                                </label>
+                                <div class="invalid-feedback">
+                                    Formato de correo electrónico inválido
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="idEdad" placeholder="Edad" />
+                                <label for="idEdad">
+                                    <i class="bi bi-hash"></i> Edad
+                                </label>
+                                <div class="invalid-feedback">
+                                    Solo se permiten números
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="button" class="btn btn-success" id="idBtnValidar">
+                                <i class="bi bi-check-circle"></i> Validar Formulario
+                            </button>
+                            <button type="button" class="btn btn-secondary" id="idBtnLimpiarEstudiante">
+                                <i class="bi bi-x-circle"></i> Limpiar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div id="idResultadoValidacion" class="alert" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/validacionEstudiante.js"></script>
+</body>
+
+</html>
